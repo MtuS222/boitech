@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta login="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/login-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+
+    <title>BoiTech - Entrar</title>
+</head>
+
+<body>
+    <div class="login-screen">
+        <div class="login-screen-left">
+            <img src="../img/logo-boi-tech.png" alt="boi tecnologico logo">
+        </div>
+
+        <div class="login-screen-right">
+            <h1>BOI TECH</h1>
+
+            <form name="login-form" action="home-page.html" onsubmit="return validateForm()">
+                <label for="flogin">Login:</label>
+                <input type="text" id="flogin" name="flogin"><br><br>
+                <label for="fsenha">Senha:</label>
+                <input type="text" id="fsenha" login="lsenha"><br><br>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Esqueceu a senha?</a><br><br>
+                <input type="submit" value="Entrar"><br><br>
+                <p class="errorMessage top-arrow"> </p>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function validateForm() {
+            var login = document.forms["login-form"]["flogin"].value;
+            console.log('aaa');
+            var senha = document.forms["login-form"]["fsenha"].value;
+            console.log(login);
+            console.log(senha);
+            if ((login == null || login == "") || (senha == null || senha == "")) {
+                document.getElementsByClassName("errorMessage")[0].style.visibility = "visible";
+                document.getElementsByClassName("errorMessage")[0].innerHTML = "Preencha os campos";
+                return false;
+            } else {
+                if (login != 'admin' || senha != 'admin') {
+                    document.getElementsByClassName("errorMessage")[0].style.visibility = "visible";
+                    document.getElementsByClassName("errorMessage")[0].innerHTML = "Preenche direito carai";
+                    return false;
+                } else if(login == 'admin' && senha == 'admin') {
+                    return true;
+                }
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

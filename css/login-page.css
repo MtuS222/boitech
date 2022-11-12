@@ -1,0 +1,112 @@
+/* PERSONALIZA TAMANHO DA TELA INTEIRA */
+.login-screen {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* PERSONALIZA TAMANHO E COR DO LADO ESQUERDO (VERDE) */
+.login-screen-left {
+    height: 100%;
+    width: 75%;
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-screen-left img {
+    height: 70%;
+}
+
+/* PERSINALIZA TAMANHO E COR DO LADO DIREITO (BRANCO) */
+.login-screen-right {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.login-screen-right h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: var(--dark-green);
+
+}
+
+.login-screen-right label{
+    color: var(--dark-green);
+}
+
+.login-screen-right input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: var(--gray);
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+
+.login-screen-right a {
+    text-decoration: none;
+    color: var(--dark-green);
+    margin: 0 0 0 45%;
+}
+
+.login-screen-right label {
+    margin-left: 10px;
+}
+
+.login-screen-right input[type=submit] {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 20px;
+    background-color: var(--dark-green);
+    border: var(--dark-green);
+    text-transform: uppercase;
+    margin-top: 20px;
+    /* margin-left: 75px; */
+    margin: 0 auto 0 25.35%;
+}
+
+.login-screen-right input[type=submit]:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+.errorMessage {
+    background-color: white;
+    /* width: 143px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* margin-left: 107px; */
+    visibility: hidden;
+    border-radius: 10px;
+    position: fixed;
+    float: left;
+    color: red;
+    }
+    .errorMessage.top-arrow:after {
+    content: " ";
+    position: absolute;
+    right: 90px;
+    top: -15px;
+    border-top: none;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 15px solid white;
+    }
