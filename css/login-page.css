@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background-color: var(--maneiro);
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
 
 }
 
-.login-screen-right label{
+.login-screen-right label {
     color: var(--dark-green);
 }
 
@@ -48,7 +48,6 @@
     margin: 8px 0;
     display: inline-block;
     background-color: var(--gray);
-    /* border: 1px solid #ccc; */
     border: none;
     border-radius: 4px;
     box-sizing: border-box;
@@ -76,7 +75,6 @@
     border: var(--dark-green);
     text-transform: uppercase;
     margin-top: 20px;
-    /* margin-left: 75px; */
     margin: 0 auto 0 25.35%;
 }
 
@@ -88,19 +86,18 @@
 
 .errorMessage {
     background-color: white;
-    /* width: 143px; */
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    /* margin-left: 107px; */
     visibility: hidden;
     border-radius: 10px;
     position: fixed;
     float: left;
     color: red;
-    }
-    .errorMessage.top-arrow:after {
+}
+
+.errorMessage.top-arrow:after {
     content: " ";
     position: absolute;
     right: 90px;
@@ -109,4 +106,4 @@
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
     border-bottom: 15px solid white;
-    }
+}
