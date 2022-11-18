@@ -18,8 +18,9 @@
     text-align: center;
 }
 
-.home-screen-left button {
-    /* width: 70%; */
+.home-screen-left a {
+    text-decoration: none;
+    width: 70%;
     padding: 10px 5px;
     font-size: 17px;
     border: none;
@@ -27,54 +28,10 @@
     color: var(--dark-green);
     font-weight: bolder;
     border-radius: 5px;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
 }
 
-.accordion-item {
-    background-color: var(--gray)!important;
-}
-
-.accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")!important;
-    transform: rotate(-180deg);
-}
-
-.accordion-button:focus {
-    border: none!important;
-    border-color: transparent!important;
-    box-shadow: none!important;
-}
-
-.accordion-button.collapsed {
-    width: 200px;
-}
-
-.accordion-button.collapsed:hover {
-    color: var(--gray)!important;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: var(--gray)!important;
-    color: var(--dark-green)!important;
-    border: none!important;
-    box-shadow: none!important;
-}
-
-.accordion-button:not(.collapsed):hover {
-    color: var(--gray)!important;
-    background-color: var(--dark-green)!important;
-
-
-}
-.accordion-body {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    width: 200px;
-
-}
-
-.home-screen-left button:hover {
+.home-screen-left a:hover {
     cursor: pointer;
     background-color: var(--dark-green);
     color: var(--green);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,87 @@
     font-family: 'Inconsolata', monospace;
 }
 
-html,body {
+
+html,
+body {
     height: 100%;
     width: 100%;
+    background-color: var(--dark-green);
+}
+
+
+.back-button {
+    text-decoration: none;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    background-color: var(--gray);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: var(--maneiro);
+    transition: all 250ms;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.39);
+    padding-right: 5px;
+}
+
+.search-bar {
+    height: 85px;
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 15px;
+    margin: 50px 0px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #6d6d6d;
+}
+
+.data-table {
+    height: 300px;
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #6d6d6d;
+}
+
+.button-new {
+    background-color: var(--gray);
+    color: var(--maneiro);
+    font-weight: 900;
+    font-size: 18px;
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.button-new:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.20);
+}
+
+.divider {
+    height: 3px;
+    width: 100%;
+    background-color: var(--gray);
 }

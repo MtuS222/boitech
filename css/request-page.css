@@ -1,0 +1,11 @@
+.request-screen{
+    height: 100%;
+    padding: 100px 200px;
+}
+.request-screen h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
